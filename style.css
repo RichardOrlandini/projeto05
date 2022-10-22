@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 65.5%;
+}
+
+body{
+  background: #EFEFEF;
+}
+
+body::before{
+  content: "";
+  width: 100%;
+  height: 368px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+.page {
+  width: 736px;
+  margin: auto;
+}
+header,legend{
+  font-family:'Staatliches';
+}
+header {
+  width: 319px;
+  height: 60px;
+
+  margin-top: 74px;
+
+  color: #FFFFFF;
+}
+
+header h1{
+  margin-bottom: 18px;
+
+  
+  font-size: 48px;
+  line-height: 60px;
+}
+
+header p{
+  font-family: 'Poppins';
+  font-size: 20px;
+  line-height: 30px;
+}
+
+form{
+  margin-top: 110px;
+  min-height: 300px;
+  
+  border-radius: 20px 20px 0px 0px;
+
+  background: #FFFFFF;
+  padding: 48px 68px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+fieldset{
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+legend{
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #535971;
+  padding-bottom: 16px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #E6E6F0;
+}
+
+
+.sectionFlex { 
+  display: flex;
+  gap: 20px;
+  
+}
+/* pegue o primeiro filho e faça eles ocuparem 50%
+*/
+.sectionFlex> div:nth-child(1) { 
+  width: 50%;
+}
+.sectionFlex> div:nth-child(2) { 
+  width: 50%;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label{
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #4E4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+
+  font-size: 14px;
+  line-height: 20px;
+  
+  color: #a9a7af;
+}
+
+.input-wrapper span:hover{
+  color: #616063;
+}
+
+.input-wrapper input{
+  height: 56px;
+
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+
+h2{
+  border: none;
+  font-style: none;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: #535971;
+}
+
+.section-flexTwo{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section-flexTwo> div:nth-child(1) { 
+  width: 50%;
+}
+
+footer{
+
+  height: 136px;
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 71px;
+}
+
+.button{
+  background: #FF5374;
+  border-radius: 20px;
+  border: none;
+  
+  width: 100%;
+  height: 80px;
+}
+
+.button:hover{
+  cursor: pointer;
+  background: #f9355c;
+
+}

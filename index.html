@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto05</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+  
+  <header>
+    <h1>Mentoria</h1>
+    <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+  </header>
+
+  <form>
+    <fieldset> <!-- One section-->
+      <div class="fieldset-wrapper">
+        <legend>Informações pessoais</legend>
+        <div class="sectionFlex">
+
+
+          <div class="input-wrapper">
+            <label for="event-name">Nome</label>
+            <input type="text" id="event-name"/>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="event-lastName">Sobrenome</label>
+            <input type="text" id="event-lastName"/>
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="event-email">Email<span>(digite um email válido)</span></label>
+          <input type="text" id="event-email"/>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="event-password">Senha<span>(mínimo de 6 caracteres)</span></label>
+          <input type="text" id="event-password"/>
+        </div>
+        
+        <legend>Informações do mentor</legend>
+
+        <div class="input-wrapper">
+          <label for="event-nameMentor">Nome do seu mentor<span>(só o primeiro nome)</span></label>
+          <input type="text" id="event-nameMentor"/>
+        </div>
+
+        <legend>Seus horários disponíveis</legend>
+
+        <h2>Primeira mentoria</h2>
+        
+        <div class="section-flexTwo">
+          <div class="input-wrapper">
+            <label for="event-date">Data<span>(DD/MM/AAAA)</span></label>
+            <input type="text" id="event-date"/>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="event-das">Das</label>
+            <input type="text" id="event-das"/>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="event-ate">Até</label>
+            <input type="text" id="event-ate"/>
+          </div>
+        </div>
+
+        <h2>Segunda mentoria</h2>
+
+        <div class="section-flexTwo">
+          <div class="input-wrapper">
+            <label for="event-dateTwo">Data<span>(DD/MM/AAAA)</span></label>
+            <input type="text" id="event-dateTwo"/>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="event-dasTwo">Das</label>
+            <input type="text" id="event-dasTwo"/>
+          </div>
+  
+          <div class="input-wrapper">
+            <label for="event-ateTwo">Até</label>
+            <input type="text" id="event-ateTwo"/>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+  </form> <!-- final form-->
+  <footer>
+    <button 
+    class="button" 
+    form="my-form">
+    Salvar 
+  </button>
+  </footer>
+  
+  </div> <!-- final Page-->
+</body>
+</html>
